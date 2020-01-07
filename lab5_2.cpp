@@ -1,10 +1,28 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
+string mixText(string a,string b){
+	string x;
+		int i=0;
+	if(a.size()==b.size()){
+		
+		while(i<a.size()){
+			cout << a[i] << b[i];
+			i++;
+		}
+
+	}else
+	{
+		return "E" ;
+	}
+	return "" ;
+}
 
 
 
 int main(){	
+	
 	cout << mixText("AAA","BBB") << "\n";
 	cout << mixText("Hello","World") << "\n";
 	cout << mixText("SOTUS","CHEER") << "\n";
